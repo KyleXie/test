@@ -20,6 +20,9 @@ class HomeViewController: UIViewController {
             NSHTTPCookieDomain:"http://api.wtweika.com/test"
             ]);
         
+        // 之前在这里打印 NSHTTPCookieStorage.sharedHTTPCookieStorage().cookieAcceptPolicy.rawValue，值是 2，
+        // OnlyFromMainDocumentDomain, 在这里加一句，改成 Always 试试？
+        NSHTTPCookieStorage.sharedHTTPCookieStorage().cookieAcceptPolicy = .Always
         
         NSHTTPCookieStorage.sharedHTTPCookieStorage().setCookies([cookie!], forURL: NSURL(string: "http://api.wtweika.com/test")!, mainDocumentURL: nil)
         
