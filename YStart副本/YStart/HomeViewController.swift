@@ -17,8 +17,7 @@ class HomeViewController: UIViewController {
             NSHTTPCookieName:"username",
             NSHTTPCookieValue:"test",
             NSHTTPCookiePath:"/",
-            NSHTTPCookieDomain:"http://api.wtweika.com/test",
-            NSHTTPCookieExpires : "2017-03-25 02:15:01 +0000"
+            NSHTTPCookieDomain:"http://api.wtweika.com/test"
             ]);
         
         
